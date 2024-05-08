@@ -24,5 +24,7 @@
         body_format: json
         validate_certs: False
       register: as_output
-      
+    - name: Print the result  
+      debug:
+        msg: "The resul is {{as_output}}"
 ...
